@@ -17,8 +17,14 @@ function draw() {
 function branch(len){
 	line(0,0,0,-len);
 	translate(0,-len);
-	rotate(angle);
 	if(len > 4){
+		push();
+		rotate(angle);
 		branch(len * 0.67);
+		pop();
+		push();
+		rotate(-angle);
+		branch(len * 0.67);
+		pop();
 	}
 }
