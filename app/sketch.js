@@ -11,7 +11,7 @@ function draw() {
 	stroke(255);
 	angle = slider.value();
 	translate(width / 2,height);
-	branch(100);
+	branch(200);
 }
 
 function branch(len){
@@ -19,10 +19,12 @@ function branch(len){
 	translate(0,-len);
 	if(len > 4){
 		push();
+		//stroke('red');
 		rotate(angle);
 		branch(len * 0.67);
 		pop();
 		push();
+		//stroke('blue');
 		rotate(-angle);
 		branch(len * 0.67);
 		pop();
