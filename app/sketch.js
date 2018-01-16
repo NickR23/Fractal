@@ -3,7 +3,7 @@ var slider;
 
 function setup() {
   createCanvas(400,400);
-  slider = createSlider(0, PI/2, PI/4, 0.1)
+  slider = createSlider(0, PI/2, PI/4, 0.01)
 }
 
 function draw() {
